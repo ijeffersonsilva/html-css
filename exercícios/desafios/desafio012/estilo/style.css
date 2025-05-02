@@ -2,12 +2,12 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&family=Sriracha&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
 
 :root { 
     --fonte1: Verdana, Geneva, Tahoma, sans-serif;
     --fonte2: "Passion One", sans-serif;
-    --fonte3: "Passion One", sans-serif;
+    --fonte3: "Sriracha", cursive;
 }
 
 * { 
@@ -54,8 +54,13 @@ section {
     line-height: 2em;
     padding-left: 30px;
     font-family: var(--fonte3);
-    font-size: 3.5vw;
+    font-size: 2.5vw;
 }
+
+section > p {
+    padding-bottom: 2em;
+}
+
 
 section.normal { 
     background-color: white;
@@ -65,12 +70,27 @@ section.normal {
 section.imagem {
     background-color: rgb(48, 47, 47);
     color: white;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.603);
+    background-size: cover;
+    background-attachment: fixed;
+
 }
 
 section.imagem > p {
     display: inline-block;
     padding: 5px;
-    background-color: rgb(31, 30, 30);
+    background-color: rgba(31, 30, 30, 0.493);
+    text-shadow: 2px 2px 0px black;
+}
+
+section#img01 {
+    background-image: url(../pacote-d012/imagens/background001.jpg);
+    background-position: right center;
+}
+
+section#img02 {
+    background-image: url(../pacote-d012/imagens/background002.jpg);
+
 }
 
 footer { 
